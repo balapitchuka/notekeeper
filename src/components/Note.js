@@ -1,11 +1,11 @@
 import { render } from '@testing-library/react';
 import React from 'react';
 
-function Note() {
+function Note( { id, title, content } ) {
     return (
         <div className="note">
-            <h1>Note Title</h1>
-            <p>Note content goes here. React is amazing.</p>
+            <h1>{title}</h1>
+            <p>{content}</p>
         </div>
     )
 }
